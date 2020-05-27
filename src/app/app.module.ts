@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { PtoComponent } from './pto/pto.component';
 import { OptionsComponent } from './options/options.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { OptionsComponent } from './options/options.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
