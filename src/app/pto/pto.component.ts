@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {NgbdDatepickerBasicModule} from '../datepicker-basic/datepicker-basic.module';
 
 @Component({
   selector: 'app-pto',
@@ -12,5 +13,5 @@ export class PtoComponent implements OnInit {
 
   ngOnInit() {
   }
-  faCoffee = faCoffee;
+
 }

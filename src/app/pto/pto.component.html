@@ -2,22 +2,13 @@
     <h6>The PTO is a 60hr/yr cycle given to employees. This will help track how many hours 
         you have left within a cycle, when the cycle gets updated, or if you are out of hours.  
     </h6>
-    <p>Total Hours: 60</p>
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon fas fa-calendar">
-                        <fa-icon [icon]="faCoffee"></fa-icon>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-6 borderlize">
+        <form>
+            <app-datepicker-basic></app-datepicker-basic>
+        </form>
     </div>
-</div>>
+</div>
+
+
