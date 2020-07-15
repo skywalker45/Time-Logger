@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { PtoComponent } from './pto/pto.component';
 import { OptionsComponent } from './options/options.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DatepickerBasicComponent } from './datepicker-basic/datepicker-basic.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
+    AngularFontAwesomeModule,
     NgbModule,
     FormsModule
   ],

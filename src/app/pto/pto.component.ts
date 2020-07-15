@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {NgbdDatepickerBasicModule} from '../datepicker-basic/datepicker-basic.module';
 
 @Component({
   selector: 'app-pto',

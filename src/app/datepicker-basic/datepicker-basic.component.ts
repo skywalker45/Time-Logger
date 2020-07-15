@@ -14,10 +14,5 @@ export class DatepickerBasicComponent implements OnInit {
   }
 
   model: NgbDateStruct;
-  date: {year: number, month: number};
-
-  selectToday() {
-    this.model = this.calendar.getToday();
-  }
 
 }
