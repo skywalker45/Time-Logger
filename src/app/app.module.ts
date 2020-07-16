@@ -9,6 +9,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DatepickerBasicComponent } from './datepicker-basic/datepicker-basic.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { TimepickerBasicComponent } from './timepicker-basic/timepicker-basic.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     MenuComponent,
     PtoComponent,
     OptionsComponent,
-    DatepickerBasicComponent
+    DatepickerBasicComponent,
+    TimepickerBasicComponent
   ],
   imports: [
     BrowserModule,

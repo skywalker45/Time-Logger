@@ -1,0 +1,11 @@
+<div class="form-group row">
+    <label for="dateofDay" class="col-sm-2 col-form-label">Time:</label>
+    <div class="input-group col-sm-6">
+        <ngb-timepicker [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
+    </div>
+  </div>
+
+
+
+<hr>
+<pre>Selected time: {{time | json}}</pre>
