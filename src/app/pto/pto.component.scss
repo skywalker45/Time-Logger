@@ -1,5 +1,25 @@
-.borderlize {
-    padding-top: 10px;
+.border {
+    padding: 10px;
+    border-width: 3px !important;
+    border-radius: 16px;
 }
 
+.spacing-left {
+    padding-left: 5px;
+}
 
+.spacing-top {
+    padding-top: 100px;
+}
+
+.border {
+    box-shadow: 11px 11px 24px 6px rgba(0,0,0,1);
+}
+
+.extra-spacing-left {
+    padding-left: 125px;
+}
+
+.extra-spacing-general {
+    padding-left: 300px;
+}

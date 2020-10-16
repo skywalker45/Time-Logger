@@ -1,6 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    background-color: black;
-    color: gold;
-    background-image: linear-gradient(black, grey);
+.btn-link {
+    color: #ffc107;
+}
+
+.btn-outline-primary {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-outline-primary {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #ffc107;
 }
