@@ -12,4 +12,8 @@ export class PtoComponent implements OnInit {
   ngOnInit() {
   }
 
+  logDate(Date) {
+    console.log(Date);
+  }
+
 }

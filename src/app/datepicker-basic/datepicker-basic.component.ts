@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,11 +8,19 @@ import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 })
 export class DatepickerBasicComponent implements OnInit {
 
+  @Input()  date: string;
+  @Output() dateChange = new EventEmitter<string>();
+
   constructor(private calendar: NgbCalendar) { }
 
   ngOnInit() {
   }
 
   model: NgbDateStruct;
+
+  savedate(date: string) {
+    console.log(date);
+    this.dateChange.emit(date);
+  }
 
 }

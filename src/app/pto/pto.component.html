@@ -14,7 +14,7 @@
             <form>
                 <div class="row">
                     <div class="col-sm-3 border border-warning spacing-left">            
-                        <app-datepicker-basic></app-datepicker-basic>
+                        <app-datepicker-basic [(date)]="startdate"></app-datepicker-basic>
                         <app-timepicker-basic></app-timepicker-basic>
                     </div>
                     <div class="col-2 spacing-top extra-spacing-left">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <button type="submit" class="btn btn-outline-primary float-right" style="margin-top: 50px;">Submit</button>
+                    <button type="submit" class="btn btn-outline-primary float-right" (click)="logDate(startdate)" style="margin-top: 50px;">Submit</button>
                 </div>
             </form>
         </div>
