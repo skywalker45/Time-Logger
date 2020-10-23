@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-pto',
@@ -6,14 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pto.component.scss']
 })
 export class PtoComponent implements OnInit {
+  
+  employeeTime;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) {
+    this.employeeTime = this.formBuilder.group({
+      startdate: '',
+      enddate: '',
+      starttime: '',
+      endtime: ''
+    });
+   }
 
   ngOnInit() {
   }
 
-  logDate(Date) {
-    console.log(Date);
+  logDate(startDate, EndDate) {
+    console.log(startDate, EndDate);
+  }
+
+  onSubmit(employeeTime) {
+    console.log(employeeTime);
   }
 
 }

@@ -11,22 +11,22 @@
                     <h1 class="display-5">To Date and Time</h1>
                 </div>
             </div>
-            <form>
+            <form [formGroup]="employeeTime" (ngSubmit)="onSubmit(employeeTime.value)">
                 <div class="row">
                     <div class="col-sm-3 border border-warning spacing-left">            
                         <app-datepicker-basic [(date)]="startdate"></app-datepicker-basic>
-                        <app-timepicker-basic></app-timepicker-basic>
+                        <app-timepicker-basic [(time)]= "starttime" formControlName="time"></app-timepicker-basic>
                     </div>
                     <div class="col-2 spacing-top extra-spacing-left">
                         <fa name="fas fa-arrow-right fa-5x"></fa>
                     </div>
                     <div class="col-sm-3 border border-warning">            
-                        <app-datepicker-basic></app-datepicker-basic>
-                        <app-timepicker-basic></app-timepicker-basic>
+                        <app-datepicker-basic [(date)]="enddate"></app-datepicker-basic>
+                        <app-timepicker-basic [(time)]="endtime"></app-timepicker-basic>
                     </div>
                 </div>
                 <div class="container">
-                    <button type="submit" class="btn btn-outline-primary float-right" (click)="logDate(startdate)" style="margin-top: 50px;">Submit</button>
+                    <button type="submit" class="btn btn-outline-primary float-right" style="margin-top: 50px;">Submit</button>
                 </div>
             </form>
         </div>

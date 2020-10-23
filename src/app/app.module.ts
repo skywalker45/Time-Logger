@@ -8,7 +8,7 @@ import { OptionsComponent } from './options/options.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DatepickerBasicComponent } from './datepicker-basic/datepicker-basic.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { TimepickerBasicComponent } from './timepicker-basic/timepicker-basic.component';
 
 @NgModule({
@@ -25,7 +25,8 @@ import { TimepickerBasicComponent } from './timepicker-basic/timepicker-basic.co
     AppRoutingModule,
     AngularFontAwesomeModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

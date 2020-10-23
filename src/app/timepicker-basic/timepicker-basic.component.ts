@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-timepicker-basic',
@@ -6,11 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timepicker-basic.component.scss']
 })
 export class TimepickerBasicComponent implements OnInit {
-  time = {hour: 12, minute: 30};
+
+  @Input()  time: string;
+  @Output() timeChange = new EventEmitter<string>();
+
+
   meridian = true;
   constructor() { }
 
   ngOnInit() {
   }
+
+  
+  savetime(time: string) {
+    console.log(time);
+    this.timeChange.emit(time);
+  }
+
 
 }
